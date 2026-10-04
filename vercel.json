@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/admit-card/verify",
+      "destination": "/index.html"
+    }
+  ]
+}
