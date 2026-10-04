@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valid Admit Card</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #ebebeb;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        color: #333;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .card-wrapper {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 10px;
+      }
+
+      .card {
+        background-color: #fff;
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Teal header with checkmark */
+      .card-header {
+        background-color: #1aab8a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 18px 0;
+      }
+
+      .checkmark-circle {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: 2.5px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .checkmark-circle svg {
+        width: 20px;
+        height: 20px;
+        fill: none;
+        stroke: #fff;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      /* Title */
+      .card-title {
+        text-align: center;
+        color: #1aab8a;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 12px 0 6px;
+      }
+
+      /* Table */
+      .info-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .info-table tr {
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .info-table tr:last-child {
+        border-bottom: none;
+      }
+
+      .info-table td {
+        padding: 9px 16px;
+        vertical-align: middle;
+      }
+
+      .info-table td:first-child {
+        width: 40%;
+        color: #555;
+        font-size: 12.5px;
+      }
+
+      .info-table td:last-child {
+        color: #333;
+        font-size: 12.5px;
+        border-left: 1px solid #e5e5e5;
+      }
+
+      /* Student Code row highlight */
+      .row-student-code td:first-child {
+        color: #1aab8a;
+        font-weight: bold;
+      }
+
+      .row-student-code td:last-child {
+        color: #1aab8a;
+        font-weight: bold;
+      }
+
+      /* Student photo */
+      .student-photo {
+        width: fit-content;
+        height: fit-content;
+        object-fit: cover;
+        display: block;
+        border: none;
+      }
+
+      /* Back to UMS button */
+      .card-footer {
+        display: flex;
+        justify-content: center;
+        padding: 14px 0;
+      }
+
+      .btn-back {
+        background-color: #1aab8a;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        padding: 7px 22px;
+        font-size: 12.5px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn-back:hover {
+        background-color: #178f72;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-wrapper">
+      <div class="card">
+        <!-- Teal Header -->
+        <div class="card-header">
+          <div class="checkmark-circle">
+            <svg viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Title -->
+        <div class="card-title">Valid Admit Card</div>
+
+        <!-- Info Table -->
+        <table class="info-table">
+          <tr class="row-student-code">
+            <td>Student Code</td>
+            <td>2026100000182</td>
+          </tr>
+          <tr>
+            <td>Student Name</td>
+            <td>FAHIM SHAHRIYAR MUGDHO</td>
+          </tr>
+          <tr>
+            <td>Semester</td>
+            <td>Summer 2026</td>
+          </tr>
+          <tr>
+            <td>Exam</td>
+            <td>Final Examination</td>
+          </tr>
+          <tr>
+            <td>Verification Code</td>
+            <td>0575</td>
+          </tr>
+          <tr>
+            <td>Student Photo</td>
+            <td>
+              <img src="img.png" alt="" class="student-photo" />
+            </td>
+          </tr>
+        </table>
+
+        <!-- Footer Button -->
+        <div class="card-footer">
+          <a href="https://ums.seu.edu.bd/dashboard" class="btn-back"
+            >Back to UMS</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
